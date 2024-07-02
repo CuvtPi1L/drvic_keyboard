@@ -68,7 +68,7 @@
         default_layer {
             bindings = <
 &kp Q  &kp W       &kp E        &kp R        &kp T         &kp Y      &kp U        &kp I        &kp O       &kp P
-&kp A  &ht LALT S  &ht LCTRL D  &ht LGUI F   &kp G         &kp H      &ht RGUI J   &ht RCTRL K  &ht RALT L  &kp BSPC
+&kp A  &ht LCTRL S  &ht LALT D  &ht LGUI F   &kp G         &kp H      &ht RGUI J   &ht RALT K  &ht RCTRL L  &kp BSPC
 &kp Z  &kp X       &kp C        &kp V        &kp B         &kp N      &kp M        &kp COMMA    &kp DOT     &kp ENTER
                                 &lt LEF TAB  &kp LSHIFT     &kp SPACE &lt RIG TAB
             >;
@@ -87,17 +87,17 @@
             bindings = <
 &kp N1   &kp N2    &kp N3     &kp N4   &kp N5     &kp N6  &kp N7    &kp N8     &kp N9     &kp N0
 &kp DEL  &kp CAPS  &kp PSCRN  &kp INS  &trans     &kp LEFT  &kp DOWN   &kp UP  &kp RIGHT &trans
-&trans   &trans    &trans     &trans   &trans     &kp HOME  &kp PG_DN  &kp PG_UP  &kp END &bootloader 
-                              &trans   &kp ESC    &trans  &trans
+&trans   &trans    &trans     &trans   &trans     &kp HOME  &kp PG_DN  &kp PG_UP  &kp END &trans 
+                              &trans   &kp ESC    &bootloader   &trans
             >;
         };
 
         left_layer {
             bindings = <
-&kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp GRAVE  &kp TILDE
-&kp DQT   &kp LBKT  &kp LBRC  &kp LPAR  &default_report       &kp FSLH   &kp MINUS  &kp EQUAL  &kp COLON  &kp SEMI
-&kp SQT   &kp RBKT  &kp RBRC  &kp RPAR  &bootloader       &kp BSLH   &kp UNDER  &kp PLUS   &kp PIPE   &kp QMARK
-                              &trans    &trans       &tog MOUSE     &trans
+&kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT       &kp CARET  &kp AMPS   &kp ASTRK  &kp GRAVE  &kp TILDE
+&kp DQT   &kp LBKT  &kp LBRC  &kp LPAR  &kp LESS_THAN   &kp FSLH   &kp MINUS  &kp EQUAL  &kp COLON  &kp SEMI
+&kp SQT   &kp RBKT  &kp RBRC  &kp RPAR  &kp GREATER_THAN   &kp BSLH   &kp UNDER  &kp PLUS   &kp PIPE   &kp QMARK
+                              &trans    &bootloader      &tog MOUSE     &trans
             >;
         };
 
